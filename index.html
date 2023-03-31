@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header d-flex flex-md-row flex-column mb-3">
+    <div class="p-2 ">
+      <img width="70px" height="70px" src="assets/Sem título 1.png">
+    </div>
+    <div class="p-2 flex-fill sizeTitle">
+      <div>
+        <p>Bem vindo Marcelo</p>
+      </div>
+      <div id="barrabusca" class="input-group mb-3 ">
+        <input type="text" class="form-control nopadding mt-3" placeholder="Busque uma categoria, vendedores ou marca"
+          aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn nopadding btn btn-primary mt-3" type="button" id="button-addon2">Search</button>
+      </div>
+    </div>
+    <div class="p-2 sizeBar">
+      <a href="#">
+        <nav>
+          <ul class="menu">
+            <li><a href="#">Entrar</a></li>
+            <li><a href="#">|</a></li>
+            <li><a href="#">Registra-se</a></li>
+            <li><a href="#">|</a></li>
+            <li><a href="#">Minha conta</a></li>
+            <li><a href="#">|</a></li>
+            <li><a href="#">Acompanhar pedido</a></li>
+          </ul>
+        </nav>
+      </a>
+      <div class="d-flex flex-md-row mb-2">
+        <div class="ms-auto mt-3">
+          <p class="sizeSpecialText">Contra-reembolso | Devolução em 30 dias</p>
+          <p class="sizeSpecialText">24/7 Atendimento ao Cliente 0800 300 11 22</p>
+        </div>
+        <div class="mt-2">
+          <a href="">
+            <img class="" width="50px" height="50px" src="assets/diagram-61_24456.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div>
+    <div class="row">
+      <article class="sizeForm">
+        <form class="border border-secondary p-3 ">
+          <fieldset enable>
+            <legend class="fs-6">Pesquisa rápida - Escolha o produto</legend>
+            <p id="emailHelp" class="form-text p-1">Encontre o produto certo pelo preço certo</p>
+            <div class="mb-2 mt-1">
+              <select id="disabledSelect" class="form-select form-control form-control-sm">
+                <option>Tipo</option>
+                <option>Type</option>
+              </select>
+            </div>
+            <div class="mb-3 mt-1">
+              <select id="disabledSelect" class="form-select">
+                <option>Marca</option>
+                <option>Type</option>
+              </select>
+            </div>
+            <div class="mb-3 mt-1">
+              <select id="disabledSelect" class="form-select">
+                <option>Categoria</option>
+                <option>Type</option>
+                <option>Type</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+          </fieldset>
+        </form>
+      </article>
+      <article class="col ">
+        <div id="carouselExampleIndicators" class="carousel slide imgTest ">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/Banner900x400.jpg" class="d-block w-100" alt="Imagem 1 do carousel" title="Teste">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/Banner3_900x400.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/Banner2_900x400.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+  <section class="orgMeioSite">
+    <article class="mosaic">
+      <div class="card">
+        <img src="assets/Produtos/produto1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#">
+            <h5 class="card-title">Pc Computador Cpu Intel I5</h5>
+          </a>
+          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+          <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+          <p class="card-text">De R$ 3700,00 <br>Por 3500,00 <br>15% OFF</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/Produtos/produto2.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#">
+            <h6 class="card-title">Computador Completo Fácil</h6>
+          </a>
+          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+          <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+          <p class="card-text">De R$ 4700,00 <br>Por 4500,00 <br>15% OFF</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/Produtos/produto3.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#">
+            <h6 class="card-title">Notebook Multilaser Legacy Cloud</h6>
+          </a>
+          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+          <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+          <p class="card-text">De R$ 5700,00 <br> Por 3500,00 <br>15% OFF</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/Produtos/produto4.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#">
+            <h6 class="card-title">Computador Completo Intel</h6>
+          </a>
+          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+          <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+          <p class="card-text">De R$ 13700,00 <br>Por 9000,00 <br>15% OFF</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/Produtos/produto5.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#">
+            <h6 class="card-title">Multilaser Legacy Book</h6>
+          </a>
+          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+          <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+          <p class="card-text">De R$ 700,00 <br>Por 650,00 <br>15% OFF</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/Produtos/produto6.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#">
+            <h6 class="card-title">Computador I5 8gb Ssd</h6>
+          </a>
+          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+          <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+          <p class="card-text">De R$ 7700,00 <br>Por 7000,00 <br>15% OFF</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/Produtos/produto7.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#">
+            <h6 class="card-title">Cpu Hp Compaq 3008 Mt</h6>
+          </a>
+          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+          <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+          <p class="card-text">De R$ 4300,00 <br>Por 3500,00 <br>15% OFF</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/Produtos/produto8.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#">
+            <h6 class="card-title">Cpu Lenovo M93p - Intel I5</h6>
+          </a>
+          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+          <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+          <p class="card-text">De R$ 23700,00 <br>Por 23500,00 <br>15% OFF</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/Produtos/produto9.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#">
+            <h6 class="card-title">Computador Cpu Pc I5 3570</h6>
+          </a>
+          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+          <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+          <p class="card-text">De R$ 1700,00 <br>Por 990,99 <br>15% OFF</p>
+        </div>
+      </div>
+    </article>
+    <aside class="mosaicLateral">
+      <article class="barraLateralBorda">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/Produtos/Lateral/lateral01.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <a href="#">
+                  <h6 class="card-title">Kit Multimidia</h6>
+                </a>
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                <div class="rating">
+                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                </div>
+                <p class="card-text">De R$ 3207,00 <br>Por 2890,00 <br>15% OFF</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/Produtos/Lateral/lateral02.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <a href="#">
+                  <h6 class="card-title">Mic full</h6>
+                </a>
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                <div class="rating">
+                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                </div>
+                <p class="card-text">De R$ 38,00 <br>Por 34,00 <br>15% OFF</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/Produtos/Lateral/lateral03.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <a href="#">
+                  <h6 class="card-title">Microfone Pro</h6>
+                </a>
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                <div class="rating">
+                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                </div>
+                <p class="card-text">De R$ 700,00 <br>Por 500,00 <br>15% OFF</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/Produtos/Lateral/lateral04.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <a href="#">
+                  <h6 class="card-title">HDMI em ouro</h6>
+                </a>
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                <div class="rating">
+                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                </div>
+                <p class="card-text">De R$ 300,00 <br>Por 300,00 <br>0% OFF</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/Produtos/Lateral/lateral05.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <a href="#">
+                  <h6 class="card-title">Teclado</h6>
+                </a>
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                <div class="rating">
+                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                </div>
+                <p class="card-text">De R$ 7300,00 <br>Por 7000,00 <br>15% OFF</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 " style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/Produtos/Lateral/lateral06.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <a href="#">
+                  <h6 class="card-title">Web can</h6>
+                </a>
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                <div class="rating">
+                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                </div>
+                <p class="card-text">De R$ 100,00 <br>Por 89,00 <br>15% OFF</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="mt-1 bordaNewsletter">
+          <div class="col">
+            <p class="text-center ">Newsletter</p>
+            <form action="">
+              <input type="email" class="" aria-describedby="emailHelp" placeholder="Insira seu e-mail">
+              <button type="submit" class="btn btn-outline-secondary my-2">Cadastrar e-mail</button>
+            </form>
+          </div>
+        </div>
+      </article>
+    </aside>
+  </section>
+  <footer>
+    <div class="rodape">
+      <div>
+        <h6>Metodos de pagamento</h6>
+        <img width="70px" src="assets/IconesCartaoCreditos/Master.jpg">
+        <img width="70px" src="assets/IconesCartaoCreditos/Visa.jpeg">
+        <img width="70px" src="assets/IconesCartaoCreditos/Diners.jpeg">
+      </div>
+      <div>
+        <h6>Outros serviços</h6>
+        <a href="#">
+          <p>Ajuda</p>
+        </a>
+        <a href="#">
+          <p>Metodos de envio</p>
+        </a>
+        <a href="#">
+          <p>Cancelamentos e retornos</p>
+        </a>
+        <a href="#">
+          <p>FAQ</p>
+        </a>
+        <a href="#">
+          <p>Política de privacidade</p>
+        </a>
+        <a href="#">
+          <p>Reclamações</p>
+        </a>
+      </div>
+      <div>
+        <h6>Redes Sociais</h6>
+        <img width="30px" src="assets/IconesRedesSociais/Facebook.png">
+        <img width="30px" src="assets/IconesRedesSociais/Instagram.png">
+        <img width="30px" src="assets/IconesRedesSociais/Twiter.png">
+      </div>
+      <div>
+        <h6>Contate-nos</h6>
+        <p>Praça Sete Edifício Raul Soares</p>
+        <a href="#">
+          <p>titecnolofia@company.com.br</p>
+        </a>
+        <h6>0800 300 11 22</h6>
+      </div>
+    </div>
+  </footer>
+  <div>
+    <div class="text-center" style="background-color:silver; padding: 20px; border-radius: 4px; opacity: 40%;">
+      &copy 2018 Copyright: <a href="#">By Marcelo Gomes de Oliveira</a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+</html>

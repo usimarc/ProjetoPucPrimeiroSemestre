@@ -1,0 +1,210 @@
+
+html{
+  height: 100%;
+   
+}
+
+body {
+  margin: 0px auto ;
+  max-width: 1024px;
+  }
+
+ul, li, p{
+   margin: 0px;
+   padding: 0px;
+   font-size: 1rem;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.sizeForm {
+  width: 250px;
+}
+
+.header a{
+  text-decoration: none;
+}
+
+.header{
+ padding: 10px;
+ 
+}
+
+.menu{
+  display: flex;
+}
+
+.menu li{
+  font-size: 10px;
+  list-style: none;
+  margin-left: 20px;
+  
+}
+
+header a img {
+  max-width: 80%;
+  display: block;
+  
+}
+
+.nopadding {
+  padding: 3px;
+}
+
+.sizeSpecialText {
+  font-size: 14px;
+}
+
+#barrabusca {
+  width: 80%;
+
+}
+
+.virarBlock {
+  display: flex;
+  width: 100%;
+  
+}
+
+.imgTest {
+  width: 100%;
+}
+
+.carousel {
+  overflow: hidden ;
+  /* max-width: 700px; */
+  
+}
+
+.mosaic {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.mosaic img {
+  height: 150px;
+  object-fit: contain;
+  
+}
+.orgMeioSite{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 25px;
+  margin-top: 20px;
+}
+
+
+.mosaicLateral img {
+  height: 150px;
+  object-fit: contain;
+}
+
+.mosaic p {
+  margin-top: 10px;
+  
+}
+
+.bordaNewsletter {
+  border: 1px solid silver;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+ 
+.rounded p {
+  
+  color: silver;
+}
+
+.rodape {
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  
+  }
+
+@media(max-width: 768px) {
+  
+  body {
+    padding: 0 10%;
+
+    }
+
+  .sizeForm {
+    width: 100%;
+    min-width: 300px;
+  }
+  body {
+    margin: 5px ;
+    }
+
+  .sizeBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  header, .sizeTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .imgTest {
+    margin-top: 20px;
+  }
+
+  .mosaic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .orgMeioSite{
+    
+    grid-template-columns: 1fr;
+    
+  }
+
+  .mosaicLateral {
+      display: none;
+    
+  }
+
+  .rodape {
+    margin: 20px auto;
+      width: 100%;
+     display: inline-block;
+     text-align: center;   
+    }
+}
+
+@media(max-width: 490px) {
+  .mosaic {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  body {
+    padding: 0 10%;
+    }
+
+    .rodape {
+      margin: 20px auto;
+      width: 100%;
+     display: inline-block;
+     text-align: center;
+      
+      }
+}
