@@ -90,6 +90,10 @@ header a img {
   grid-gap: 20px;
 }
 
+.amosaic {
+  width: 50%;
+}
+
 .mosaic img {
   height: 150px;
   object-fit: contain;
@@ -100,6 +104,12 @@ header a img {
   grid-template-columns: 3fr;
   grid-gap: 25px;
   margin-top: 20px;
+}
+.aorgMeioSite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 
