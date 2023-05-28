@@ -1,19 +1,18 @@
-const search = document.getElementById('button-addon2');
+const inputSearch = document.getElementById('inputSearch');
+const buttonSearch = document.getElementById('button-addon2');
 let card = "";
 
-search.addEventListener('click', () => {
-  window.location.href = 'search.html';
-
+buttonSearch.addEventListener('click', () => {
+  window.location.href = `search.html?busca=${inputSearch.value}`;
+  inputSearch.value = '';
 })
 
-
-
 function searchProdutcs() {
-fetch('https://fakestoreapi.com/products?limit=9')
+fetch(`https://fakestoreapi.com/products?limit=9`)
   .then(res => res.json())
   .then(data => {
     for(i=0; i<data.length; i+=1){
-      console.log(data[i]);
+      // console.log(data[i]);
       card += `
       <div class="card">
       <a href="details.html?id=${data[i].id}">
@@ -34,4 +33,4 @@ fetch('https://fakestoreapi.com/products?limit=9')
 
 };
 
-searchProdutcs();
+  searchProdutcs();
