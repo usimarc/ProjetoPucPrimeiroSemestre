@@ -11,7 +11,7 @@ function getProdutc() {
     .then(data => {
       console.log(data)
       card += `
-      <div class="card style="width: 58rem;">
+      <div class="card">
       
         <img src="${data.image}" class="card-img-top" alt="...">
         <div class="card-body">
