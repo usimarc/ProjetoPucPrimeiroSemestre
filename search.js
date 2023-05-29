@@ -17,17 +17,18 @@ buttonSearch.addEventListener('click', () => {
 });
 
 function searchProducts(buscar) {
-  fetch(`https://fakestoreapi.com/products?limit=1000`)
+  fetch(`http://diwserver.vps.webdock.cloud:8765/products/search?query=${buscar}`)
     .then(res => res.json())
     .then(data => {
+      console.log(data);
       dataFiltrado = data.filter(item => item.title.toLowerCase().includes(buscar.toLowerCase()));
       console.log(dataFiltrado);
       if (dataFiltrado.length === 0) {
         // Display a message when no products are found
-        document.getElementById('mosaic').innerHTML = '<p>Não encontramos nenhum produto com essa descrição. Tente algo como jacket, t-shirt, HD, SSD.</p>';
+        document.getElementById('mosaic').innerHTML = '<p>Não encontramos nenhum produto com essa descrição. Tente algo como jacket, t-shirt, bag.</p>';
       } else {
-        for (i = 0; i < dataFiltrado.length; i += 1) {
-          console.log(dataFiltrado[i]);
+        for (i = 0; i < 9; i += 1) {
+          console.log(dataFiltrado[i].id);
           card += `
             <div class="card">
               <a href="details.html?id=${dataFiltrado[i].id}">

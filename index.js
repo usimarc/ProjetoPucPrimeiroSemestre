@@ -8,23 +8,24 @@ buttonSearch.addEventListener('click', () => {
 })
 
 function searchProdutcs() {
-fetch(`https://fakestoreapi.com/products?limit=9`)
+fetch(`http://diwserver.vps.webdock.cloud:8765/products`)
   .then(res => res.json())
   .then(data => {
-    for(i=0; i<data.length; i+=1){
+    console.log(data.products);
+    for(i=0; i<9; i+=1){
       // console.log(data[i]);
       card += `
       <div class="card">
-      <a href="details.html?id=${data[i].id}">
-        <img src="${data[i].image}" class="card-img-top" alt="...">
+      <a href="details.html?id=${data.products[i].id}">
+        <img src="${data.products[i].image}" class="card-img-top" alt="...">
         <div class="card-body">
           
-            <h6 class="card-title textoLimite">${data[i].title}</h6>
+            <h6 class="card-title textoLimite">${data.products[i].title}</h6>
           </a>
           <div class="rating">
-            <p>Cassificação: ${data[i].rating.rate}</p>
+            <p>Cassificação: ${data.products[i].rating.rate}</p>
           </div>
-          <p class="card-text">Valor: R$ ${data[i].price} </p>
+          <p class="card-text">Valor: R$ ${data.products[i].price} </p>
         </div>
       </div>`;     
     }
