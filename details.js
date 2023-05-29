@@ -6,7 +6,7 @@ console.log(id);
 
 function getProdutc() {
 
-  fetch(`http://diwserver.vps.webdock.cloud:8765/products/${id}`)
+  fetch(`https://diwserver.vps.webdock.cloud/products/${id}`)
     .then(res => res.json())
     .then(data => {
       console.log(data)

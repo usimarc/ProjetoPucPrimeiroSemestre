@@ -8,18 +8,15 @@ buttonSearch.addEventListener('click', () => {
 })
 
 function searchProdutcs() {
-fetch(`http://diwserver.vps.webdock.cloud:8765/products`)
-  .then(res => res.json())
-  .then(data => {
-    console.log(data.products);
-    for(i=0; i<9; i+=1){
-      // console.log(data[i]);
-      card += `
+  fetch(`https://diwserver.vps.webdock.cloud/products`)
+    .then(res => res.json())
+    .then(data => {
+      for (i = 0; i < 9; i += 1) {
+        card += `
       <div class="card">
       <a href="details.html?id=${data.products[i].id}">
         <img src="${data.products[i].image}" class="card-img-top" alt="...">
         <div class="card-body">
-          
             <h6 class="card-title textoLimite">${data.products[i].title}</h6>
           </a>
           <div class="rating">
@@ -27,11 +24,10 @@ fetch(`http://diwserver.vps.webdock.cloud:8765/products`)
           </div>
           <p class="card-text">Valor: R$ ${data.products[i].price} </p>
         </div>
-      </div>`;     
-    }
-    document.getElementById('mosaic').innerHTML = card;
-  });
-
+      </div>`;
+      }
+      document.getElementById('mosaic').innerHTML = card;
+    });
 };
 
-  searchProdutcs();
+searchProdutcs();
