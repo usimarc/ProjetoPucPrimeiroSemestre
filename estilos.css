@@ -7,7 +7,7 @@ html{
 body {
   margin: 0px auto ;
   max-width: 1024px;
-  min-width: 350px;
+  min-width: 300px;
   }
 
 ul, li, p{
@@ -159,12 +159,12 @@ header a img {
   
   body {
     padding: 0 10%;
-    min-width: 350px;
+    min-width: 300px;
   }
 
   .sizeForm {
     width: 100%;
-    min-width: 350px;
+    min-width: 300px;
   }
   body {
     margin: 5px ;
@@ -213,11 +213,11 @@ header a img {
       width: 100%;
      display: inline-block;
      text-align: center;
-     min-width: 350px;   
+     min-width: 300px;   
     }
 
     #roda {
-      min-width: 350px;
+      min-width: 300px;
     }
 }
 
@@ -225,7 +225,7 @@ header a img {
 
   body {
     padding: 0 10%;
-    min-width: 350px;
+    min-width: 300px;
   }
   .mosaic {
     display: grid;
@@ -242,10 +242,10 @@ header a img {
       width: 100%;
      display: inline-block;
      text-align: center;
-     min-width: 350px;
+     min-width: 300px;
       
       }
       #roda {
-        min-width: 350px;
+        min-width: 300px;
       }
 }
